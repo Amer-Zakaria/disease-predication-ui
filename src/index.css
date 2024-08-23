@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    box-sizing: content-box;
+}
+
+/* body part */
+.layers {
+    cursor: pointer;
+    opacity: 0;
+    outline: none;
+    transition: opacity .5s linear;
+    fill: #4d6182
+}
+
+.layers:hover {
+    opacity: .525;
+    fill: #1976d2;
+}
+
+.active {
+    opacity: .525;
+    fill: #1976d2;
+}
+
+/* Or divider */
+.or {
+    display: flex;
+    width: 200px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #4d6182;
+    margin: 1px auto;
+}
+
+.or:after, .or:before {
+    content: "";
+    height: 2px;
+    background: #ebedf0;
+    flex: 1 1;
+}
+
+.or:after {
+    margin-left: 1em;
+}
+
+.or:before {
+    margin-right: 1em;
+}
