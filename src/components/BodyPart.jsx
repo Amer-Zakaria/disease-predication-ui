@@ -6,7 +6,7 @@ import { Typography } from "@mui/material";
 
 export default function BodyPart({
   context: {
-    bodyPart,
+    bodyParts,
     handleBodyPartSelectorChange,
   } /* extract necessary variable and functions from the context */,
 }) {
@@ -37,7 +37,7 @@ export default function BodyPart({
         >
           <Body
             handleBodyPartSelectorChange={handleBodyPartSelectorChange}
-            bodyPart={bodyPart}
+            bodyParts={bodyParts}
           />
         </Box>
         <Box width="100%">
@@ -45,13 +45,13 @@ export default function BodyPart({
         </Box>
         <Box textAlign="center">
           <ToggleButtonGroup
-            color="primary"
-            value={bodyPart}
+            color="error"
+            value={bodyParts}
             exclusive
             onChange={(e) => handleBodyPartSelectorChange(e, e.target.value)}
           >
             <ToggleButton value="Skin">Skin</ToggleButton>
-          </ToggleButtonGroup>{" "}
+          </ToggleButtonGroup>
         </Box>
       </Box>
     </>

@@ -17,9 +17,14 @@
     fill: #1976d2;
 }
 
+.active:hover {
+    opacity: .525;
+    fill: red;
+}
+
 .active {
     opacity: .525;
-    fill: #1976d2;
+    fill: red;
 }
 
 /* Or divider */

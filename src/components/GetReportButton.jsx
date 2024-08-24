@@ -3,9 +3,9 @@ import { STATUS } from "../App";
 import Button from "@mui/material/Button";
 
 export default function GetReportButton({
-  context: { symptomsList, hanbdleSubmit, requestStatus },
+  context: { pickedSymptoms, hanbdleSubmit, requestStatus },
 }) {
-  const oneCheckedList = symptomsList.find((symptom) => symptom.checked);
+  const oneCheckedList = pickedSymptoms.find((s) => s);
   const isLoading = requestStatus === STATUS.loading;
 
   return (
@@ -13,7 +13,7 @@ export default function GetReportButton({
       /* If there's no at least one checked symptom or report is being fetched disable the button  */
       disabled={!oneCheckedList || isLoading}
       onClick={hanbdleSubmit}
-      variant="outlined"
+      variant="contained"
       style={{ width: "fit-content" }}
     >
       Get Report

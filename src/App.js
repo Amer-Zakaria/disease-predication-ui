@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useMemo } from "react";
 import { useState } from "react";
 import data from "./data.json";
 import axios from "axios";
@@ -15,7 +15,6 @@ import StepLabel from "@mui/material/StepLabel";
 import Button from "@mui/material/Button";
 import BodyPart from "./components/BodyPart";
 
-// Fetshing report state possibilties
 export const STATUS = {
   pending: "PENDING",
   error: "ERROR",
@@ -24,98 +23,88 @@ export const STATUS = {
 };
 
 function App() {
-  // the needed variables and their corresponding functions that's responsble to change them
-  const [bodyPart, setBodyPart] = useState("");
-  const [symptomsList, setSymptomsList] = useState([]);
-  const [report, setReport] = useState("");
-  const [requestStatus, setRequestStatus] = useState(STATUS.pending);
-  const [activeStep, setActiveStep] = useState(0);
-  const [pickedSymptoms, setPickedSymptoms] = useState(
-    new Array(133)
-      .join(0)
-      .split("")
-      .map((z) => +z)
+  const zeros = useMemo(
+    () =>
+      new Array(133)
+        .join(0)
+        .split("")
+        .map((z) => +z),
+    []
   );
 
+  useEffect(() => {
+    if (process.env.NODE_ENV === "production")
+      axios.get("https://disease-predication-server.onrender.com/health");
+  }, []);
+
+  const [bodyParts, setBodyParts] = useState([]);
+  const [symptomsList, setSymptomsList] = useState([]);
+  const [report, setReport] = useState([]);
+  const [requestStatus, setRequestStatus] = useState(STATUS.pending);
+  const [activeStep, setActiveStep] = useState(0);
+  const [pickedSymptoms, setPickedSymptoms] = useState(zeros); // [0] * 132
+
   const steps = [
-    { nextCond: bodyPart, title: "Select body parts" },
+    { nextCond: bodyParts.length >= 1, title: "Select body parts" },
     {
-      nextCond: symptomsList.find((symptom) => symptom.checked),
+      nextCond: pickedSymptoms.find((s) => s === 1),
       title: "Select symptoms",
     },
     { nextCond: true, title: "Review & Get report" },
   ];
 
-  /* whenever a body part selected this function gets triggered  */
   function handleBodyPartSelectorChange(event, bodyPart) {
-    // store the picked body part, ex: "Skin"
     const pickedBodyPart =
       bodyPart || event.target.querySelector("title").textContent;
-    // change the body part accordingly
-    setBodyPart(pickedBodyPart);
 
-    // find the symptoms for the selected body part
-    const symptoms = data.find(
-      (disease) => disease.bodyPart === pickedBodyPart
-    ).symptoms;
+    // change the body part & symptom accordingly
+    if (bodyParts.find((bp) => bp === pickedBodyPart)) {
+      /* deselect a body part */
+      setBodyParts((oldBodyParts) =>
+        oldBodyParts.filter((bp) => bp !== pickedBodyPart)
+      );
+      setSymptomsList((oldSymptomsList) =>
+        oldSymptomsList.filter((s) => s.bodyPart !== pickedBodyPart)
+      );
+    } else {
+      /* select new body part */
+      setBodyParts((oldBodyParts) => oldBodyParts.concat([pickedBodyPart]));
+      setSymptomsList((oldSymptomsList) =>
+        oldSymptomsList.concat(
+          data
+            .find(
+              (bodyPartSymptomsMap) =>
+                bodyPartSymptomsMap.bodyPart === pickedBodyPart
+            )
+            .symptoms.map(({ name, placeIndex }) => ({
+              name: name,
+              placeIndex: placeIndex,
+              bodyPart: pickedBodyPart,
+            }))
+        )
+      );
+    }
+  }
 
-    // change symptoms variable to an array of objects
-    setSymptomsList(
-      //ex: if symptoms is ["Skin", ...] => [{name: "Skin", checked: false, count: 0}, ...]
-      symptoms.map((s) => ({
-        name: s.name,
-        checked: false,
-        placeIndex: s.placeIndex,
-      }))
+  function handleSymptomChange(event) {
+    const checkedSymptomName = event.target.value;
+
+    const checkedSymptomPlace = symptomsList.find(
+      (s) => s.name === checkedSymptomName
+    ).placeIndex;
+
+    setPickedSymptoms((oldPickedSymptoms) =>
+      oldPickedSymptoms.map((s, i) =>
+        i === checkedSymptomPlace ? (s === 1 ? 0 : 1) : s
+      )
     );
   }
 
-  /* whenever an individual symptom gets checked this function gets triggered  */
-  function handleSymptomChange(event) {
-    // store the selected symptom, ex: "Rash"
-    const checkedSymptomName = event.target.value;
-
-    // chnage the slected symptom in the sysmptoms array variable
-    setSymptomsList((oldSymptomsList) => {
-      const newSymptomsList = oldSymptomsList.map((symptom) =>
-        symptom.name === checkedSymptomName
-          ? {
-              ...symptom,
-              checked: !symptom.checked /* the opposite of what it was */,
-            }
-          : symptom
-      );
-
-      return newSymptomsList;
-    });
-    /* ex:
-        checkedSymptomName: "Skin"
-        oldSymptomsList: [..., {name: "Skin", checked: true, count: 0}, ...]
-        new symptoms list: -> [..., {name: "Skin", checked: false, count: 0}, ...]
-    */
-  }
-
-  /* whenever the get report button gets clicked this function gets triggered  */
   async function hanbdleSubmit() {
-    const numberOfSymptoms = 132;
-    const constructSypmtomsBinaryList = new Array(numberOfSymptoms + 1)
-      .join(0)
-      .split("")
-      .map((z) => +z);
-
-    // handle submit
     try {
       setRequestStatus(STATUS.loading);
 
-      const selectedSymptoms = symptomsList.filter(
-        (symptom) => symptom.checked
-      );
-
-      selectedSymptoms.forEach(
-        (s) => (constructSypmtomsBinaryList[s.placeIndex] = 1)
-      );
-
-      const requestData = constructSypmtomsBinaryList;
+      const requestData = pickedSymptoms;
 
       const response = await axios.post(
         process.env.NODE_ENV === "production"
@@ -132,10 +121,13 @@ function App() {
 
   const handleNext = () => {
     if (activeStep + 1 === steps.length) {
-      // Last step ==> reset
-      setBodyPart("");
+      // if Last step (RESET)
+      setBodyParts([]);
+      setReport([]);
       setSymptomsList([]);
+      setPickedSymptoms(zeros);
       setActiveStep(0);
+      setRequestStatus(STATUS.pending);
     } else setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
 
@@ -143,11 +135,11 @@ function App() {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
-  /* putting the above functions and variables inside of an object as "context" */
   const context = {
     data,
-    bodyPart,
+    bodyParts,
     symptomsList,
+    pickedSymptoms,
     report,
     requestStatus,
     handleBodyPartSelectorChange,
@@ -223,7 +215,7 @@ function App() {
         <Box sx={{ flex: "1 1 auto" }} />
         <Button
           onClick={handleNext}
-          variant="contained"
+          variant={activeStep === steps.length - 1 ? "outlined" : "contained"}
           disabled={
             !steps[activeStep].nextCond || requestStatus === STATUS.loading
           }

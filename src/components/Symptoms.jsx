@@ -5,7 +5,7 @@ import Checkbox from "@mui/material/Checkbox";
 import Box from "@mui/material/Box";
 
 export default function Symptoms({
-  context: { handleSymptomChange, bodyPart, symptomsList },
+  context: { pickedSymptoms, handleSymptomChange, bodyParts, symptomsList },
 }) {
   return (
     <Box maxWidth="600px" mt={2} width="100%">
@@ -22,38 +22,73 @@ export default function Symptoms({
           gutterBottom
           mb={1.5}
         >
-          Symptom / Frequency for <strong>{bodyPart}</strong>
+          Symptoms for <strong>{bodyParts.join(", ")}</strong>.
         </Typography>
 
-        <Box
-          display="flex"
-          justifyContent="center"
-          flexWrap="wrap"
-          maxWidth="100%"
-          gap=" 10px"
-          ml={4}
-        >
-          {symptomsList.map((symptom) => (
-            <Box
-              key={symptom.name}
-              sx={{
-                flex: { xs: "1 1 100%", md: "1 1 calc(50% - 10px)" }, // Responsive: full width on xs, 50% on md and up
-              }}
-            >
-              <FormControlLabel
-                control={<Checkbox />}
-                value={symptom.name}
-                checked={symptom.checked}
-                onChange={handleSymptomChange}
-                label={symptom.name
-                  .split("_")
-                  .map((word, index) =>
-                    index === 0 ? word[0].toUpperCase() + word.slice(1) : word
-                  )
-                  .join(" ")}
-              />
-            </Box>
-          ))}
+        <Box>
+          {bodyParts
+            .map((bp) => ({
+              bodyPart: bp,
+              symptoms: symptomsList.filter((s) => s.bodyPart === bp),
+            }))
+            .map((bodypartSymptomMap) => (
+              <Box mb={2} key={bodypartSymptomMap.bodyPart}>
+                <Typography
+                  variant="overline"
+                  sx={{
+                    width: "100%",
+                    alignItems: "center",
+                    color: "#4d6182",
+                    margin: "1px auto",
+
+                    "&::after": {
+                      content: '""',
+                      width: "75%",
+                      verticalAlign: "middle",
+                      display: "inline-block",
+                      ml: 1,
+                      bgcolor: "#4d6182",
+                      height: ".5px",
+                      flex: "1 1",
+                    },
+                  }}
+                >
+                  {bodypartSymptomMap.bodyPart}
+                </Typography>
+                <Box
+                  display="flex"
+                  justifyContent="center"
+                  flexWrap="wrap"
+                  maxWidth="100%"
+                  gap=" 10px"
+                  ml={4}
+                >
+                  {bodypartSymptomMap.symptoms.map((symptom) => (
+                    <Box
+                      key={symptom.name}
+                      sx={{
+                        flex: { xs: "1 1 100%", md: "1 1 calc(50% - 10px)" }, // Responsive: full width on xs, 50% on md and up
+                      }}
+                    >
+                      <FormControlLabel
+                        control={<Checkbox />}
+                        value={symptom.name}
+                        checked={pickedSymptoms[symptom.placeIndex] === 1}
+                        onChange={handleSymptomChange}
+                        label={symptom.name
+                          .split("_")
+                          .map((word, index) =>
+                            index === 0
+                              ? word[0].toUpperCase() + word.slice(1)
+                              : word
+                          )
+                          .join(" ")}
+                      />
+                    </Box>
+                  ))}
+                </Box>
+              </Box>
+            ))}
         </Box>
       </FormGroup>
     </Box>
