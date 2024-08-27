@@ -43,7 +43,7 @@ function App() {
   const [requestStatus, setRequestStatus] = useState(STATUS.pending);
   const [activeStep, setActiveStep] = useState(0);
   const [pickedSymptoms, setPickedSymptoms] = useState(zeros); // [0] * 132
-  console.log(pickedSymptoms);
+
   const steps = [
     { nextCond: bodyParts.length >= 1, title: "Select body parts" },
     {
