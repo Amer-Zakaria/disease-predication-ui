@@ -43,7 +43,7 @@ function App() {
   const [requestStatus, setRequestStatus] = useState(STATUS.pending);
   const [activeStep, setActiveStep] = useState(0);
   const [pickedSymptoms, setPickedSymptoms] = useState(zeros); // [0] * 132
-
+  console.log(pickedSymptoms);
   const steps = [
     { nextCond: bodyParts.length >= 1, title: "Select body parts" },
     {
@@ -60,6 +60,15 @@ function App() {
     // change the body part & symptom accordingly
     if (bodyParts.find((bp) => bp === pickedBodyPart)) {
       /* deselect a body part */
+      setPickedSymptoms((old) => {
+        const sIndexes = symptomsList
+          .filter((s) => s.bodyPart === pickedBodyPart)
+          .map((s) => s.placeIndex);
+        const newList = [...old].map((oldBinary, i) =>
+          sIndexes.find((sIndex) => sIndex === i) ? 0 : oldBinary
+        );
+        return newList;
+      });
       setBodyParts((oldBodyParts) =>
         oldBodyParts.filter((bp) => bp !== pickedBodyPart)
       );
