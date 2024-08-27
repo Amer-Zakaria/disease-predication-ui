@@ -3,42 +3,6 @@
     "bodyPart": "Skin",
     "symptoms": [
       {
-        "name": "yellow_crust_ooze",
-        "placeIndex": 131
-      },
-      {
-        "name": "sweating",
-        "placeIndex": 28
-      },
-      {
-        "name": "shivering",
-        "placeIndex": 4
-      },
-      {
-        "name": "pus_filled_pimples",
-        "placeIndex": 122
-      },
-      {
-        "name": "internal_itching",
-        "placeIndex": 93
-      },
-      {
-        "name": "chills",
-        "placeIndex": 5
-      },
-      {
-        "name": "congestion",
-        "placeIndex": 55
-      },
-      {
-        "name": "continuous_sneezing",
-        "placeIndex": 3
-      },
-      {
-        "name": "blackheads",
-        "placeIndex": 123
-      },
-      {
         "name": "itching",
         "placeIndex": 0
       },
@@ -49,6 +13,14 @@
       {
         "name": "nodal_skin_eruptions",
         "placeIndex": 2
+      },
+      {
+        "name": "yellowish_skin",
+        "placeIndex": 32
+      },
+      {
+        "name": "red_spots_over_body",
+        "placeIndex": 99
       },
       {
         "name": "scurring",
@@ -63,58 +35,58 @@
         "placeIndex": 126
       },
       {
+        "name": "small_dents_in_nails",
+        "placeIndex": 127
+      },
+      {
+        "name": "inflammatory_nails",
+        "placeIndex": 128
+      },
+      {
         "name": "blister",
         "placeIndex": 129
       },
       {
-        "name": "red_sore_around_nose",
-        "placeIndex": 130
+        "name": "yellow_crust_ooze",
+        "placeIndex": 131
       },
       {
-        "name": "red_spots_over_body",
-        "placeIndex": 99
+        "name": "pus_filled_pimples",
+        "placeIndex": 122
+      },
+      {
+        "name": "blackheads",
+        "placeIndex": 123
       },
       {
         "name": "bruising",
         "placeIndex": 66
       },
       {
-        "name": "drying_and_tingling_lips",
-        "placeIndex": 76
-      },
-      {
-        "name": "yellowish_skin",
-        "placeIndex": 32
-      },
-      {
-        "name": "dehydration",
-        "placeIndex": 29
+        "name": "red_sore_around_nose",
+        "placeIndex": 130
       }
     ],
-    "isNew": true
+    "isNew": false
   },
   {
     "bodyPart": "Buttocks",
     "symptoms": [
       {
-        "name": "receiving_unsterile_injections",
-        "placeIndex": 112
+        "name": "pain_in_anal_region",
+        "placeIndex": 60
+      },
+      {
+        "name": "irritation_in_anus",
+        "placeIndex": 62
       },
       {
         "name": "pain_during_bowel_movements",
         "placeIndex": 59
       },
       {
-        "name": "pain_in_anal_region",
-        "placeIndex": 60
-      },
-      {
-        "name": "bloody_stool",
-        "placeIndex": 61
-      },
-      {
-        "name": "irritation_in_anus",
-        "placeIndex": 62
+        "name": "swelling_joints",
+        "placeIndex": 82
       }
     ],
     "isNew": false
@@ -123,32 +95,8 @@
     "bodyPart": "Arms",
     "symptoms": [
       {
-        "name": "weakness_of_one_body_side",
-        "placeIndex": 87
-      },
-      {
-        "name": "receiving_unsterile_injections",
-        "placeIndex": 112
-      },
-      {
-        "name": "receiving_blood_transfusion",
-        "placeIndex": 111
-      },
-      {
-        "name": "lethargy",
-        "placeIndex": 21
-      },
-      {
-        "name": "malaise",
-        "placeIndex": 48
-      },
-      {
-        "name": "inflammatory_nails",
-        "placeIndex": 128
-      },
-      {
-        "name": "fatigue",
-        "placeIndex": 14
+        "name": "muscle_wasting",
+        "placeIndex": 10
       },
       {
         "name": "muscle_weakness",
@@ -163,24 +111,16 @@
         "placeIndex": 82
       },
       {
-        "name": "movement_stiffness",
-        "placeIndex": 83
-      },
-      {
-        "name": "cold_hands_and_feets",
-        "placeIndex": 17
-      },
-      {
-        "name": "swollen_extremeties",
-        "placeIndex": 73
+        "name": "swollen_blood_vessels",
+        "placeIndex": 69
       },
       {
         "name": "brittle_nails",
         "placeIndex": 72
       },
       {
-        "name": "bruising",
-        "placeIndex": 66
+        "name": "inflammatory_nails",
+        "placeIndex": 128
       }
     ],
     "isNew": false
@@ -189,28 +129,20 @@
     "bodyPart": "Legs",
     "symptoms": [
       {
-        "name": "lethargy",
-        "placeIndex": 21
+        "name": "muscle_wasting",
+        "placeIndex": 10
       },
       {
-        "name": "weakness_of_one_body_side",
-        "placeIndex": 87
+        "name": "muscle_weakness",
+        "placeIndex": 80
       },
       {
-        "name": "malaise",
-        "placeIndex": 48
+        "name": "weakness_in_limbs",
+        "placeIndex": 57
       },
       {
-        "name": "knee_pain",
-        "placeIndex": 78
-      },
-      {
-        "name": "fatigue",
-        "placeIndex": 14
-      },
-      {
-        "name": "inflammatory_nails",
-        "placeIndex": 128
+        "name": "swelling_joints",
+        "placeIndex": 82
       },
       {
         "name": "swollen_legs",
@@ -221,36 +153,16 @@
         "placeIndex": 69
       },
       {
-        "name": "prominent_veins_on_calf",
-        "placeIndex": 119
-      },
-      {
         "name": "painful_walking",
         "placeIndex": 121
       },
       {
+        "name": "prominent_veins_on_calf",
+        "placeIndex": 119
+      },
+      {
         "name": "cramps",
         "placeIndex": 65
-      },
-      {
-        "name": "weakness_in_limbs",
-        "placeIndex": 57
-      },
-      {
-        "name": "cold_hands_and_feets",
-        "placeIndex": 17
-      },
-      {
-        "name": "swollen_extremeties",
-        "placeIndex": 73
-      },
-      {
-        "name": "brittle_nails",
-        "placeIndex": 72
-      },
-      {
-        "name": "bruising",
-        "placeIndex": 66
       }
     ],
     "isNew": false
@@ -265,22 +177,6 @@
       {
         "name": "muscle_pain",
         "placeIndex": 97
-      },
-      {
-        "name": "movement_stiffness",
-        "placeIndex": 83
-      },
-      {
-        "name": "joint_pain",
-        "placeIndex": 6
-      },
-      {
-        "name": "swelling_joints",
-        "placeIndex": 82
-      },
-      {
-        "name": "swelled_lymph_nodes",
-        "placeIndex": 47
       }
     ],
     "isNew": false
@@ -293,24 +189,16 @@
         "placeIndex": 63
       },
       {
-        "name": "enlarged_thyroid",
-        "placeIndex": 71
-      },
-      {
-        "name": "swelling_joints",
-        "placeIndex": 82
-      },
-      {
-        "name": "movement_stiffness",
-        "placeIndex": 83
-      },
-      {
         "name": "stiff_neck",
         "placeIndex": 81
       },
       {
-        "name": "neck_pain",
-        "placeIndex": 63
+        "name": "enlarged_thyroid",
+        "placeIndex": 71
+      },
+      {
+        "name": "swelled_lymph_nodes",
+        "placeIndex": 47
       }
     ],
     "isNew": false
@@ -319,68 +207,52 @@
     "bodyPart": "Head",
     "symptoms": [
       {
-        "name": "depression",
-        "placeIndex": 95
+        "name": "headache",
+        "placeIndex": 31
       },
       {
-        "name": "ulcers_on_tongue",
-        "placeIndex": 9
+        "name": "dizziness",
+        "placeIndex": 64
       },
       {
-        "name": "yellowing_of_eyes",
-        "placeIndex": 43
-      },
-      {
-        "name": "spinning_movements",
-        "placeIndex": 84
+        "name": "blurred_and_distorted_vision",
+        "placeIndex": 49
       },
       {
         "name": "sinus_pressure",
         "placeIndex": 53
       },
       {
-        "name": "restlessness",
-        "placeIndex": 20
-      },
-      {
         "name": "runny_nose",
         "placeIndex": 54
       },
       {
-        "name": "puffy_face_and_eyes",
-        "placeIndex": 70
+        "name": "redness_of_eyes",
+        "placeIndex": 52
       },
       {
-        "name": "lack_of_concentration",
-        "placeIndex": 109
+        "name": "sunken_eyes",
+        "placeIndex": 26
       },
       {
-        "name": "coma",
-        "placeIndex": 113
+        "name": "watering_from_eyes",
+        "placeIndex": 103
       },
       {
-        "name": "anxiety",
-        "placeIndex": 16
+        "name": "patches_in_throat",
+        "placeIndex": 22
+      },
+      {
+        "name": "mood_swings",
+        "placeIndex": 18
+      },
+      {
+        "name": "depression",
+        "placeIndex": 95
       },
       {
         "name": "irritability",
         "placeIndex": 96
-      },
-      {
-        "name": "headache",
-        "placeIndex": 31
-      },
-      {
-        "name": "lethargy",
-        "placeIndex": 21
-      },
-      {
-        "name": "malaise",
-        "placeIndex": 48
-      },
-      {
-        "name": "dizziness",
-        "placeIndex": 64
       },
       {
         "name": "loss_of_balance",
@@ -391,44 +263,64 @@
         "placeIndex": 86
       },
       {
-        "name": "blurred_and_distorted_vision",
-        "placeIndex": 49
-      },
-      {
-        "name": "altered_sensorium",
-        "placeIndex": 98
-      },
-      {
-        "name": "visual_disturbances",
-        "placeIndex": 110
+        "name": "slurred_speech",
+        "placeIndex": 77
       },
       {
         "name": "loss_of_smell",
         "placeIndex": 88
       },
       {
-        "name": "slurred_speech",
-        "placeIndex": 77
+        "name": "altered_sensorium",
+        "placeIndex": 98
+      },
+      {
+        "name": "spinning_movements",
+        "placeIndex": 84
+      },
+      {
+        "name": "coma",
+        "placeIndex": 113
+      },
+      {
+        "name": "toxic_look_(typhos)",
+        "placeIndex": 94
+      },
+      {
+        "name": "anxiety",
+        "placeIndex": 16
+      },
+      {
+        "name": "lack_of_concentration",
+        "placeIndex": 109
+      },
+      {
+        "name": "visual_disturbances",
+        "placeIndex": 110
+      },
+      {
+        "name": "fatigue",
+        "placeIndex": 14
+      },
+      {
+        "name": "restlessness",
+        "placeIndex": 20
+      },
+      {
+        "name": "lethargy",
+        "placeIndex": 21
       },
       {
         "name": "drying_and_tingling_lips",
         "placeIndex": 76
       },
       {
-        "name": "watering_from_eyes",
-        "placeIndex": 103
+        "name": "puffy_face_and_eyes",
+        "placeIndex": 70
       },
       {
-        "name": "redness_of_eyes",
-        "placeIndex": 52
-      },
-      {
-        "name": "pain_behind_the_eyes",
-        "placeIndex": 36
-      },
-      {
-        "name": "sunken_eyes",
-        "placeIndex": 26
+        "name": "cold_hands_and_feets",
+        "placeIndex": 17
       }
     ],
     "isNew": false
@@ -437,28 +329,32 @@
     "bodyPart": "Chest",
     "symptoms": [
       {
-        "name": "chest_pain",
-        "placeIndex": 56
-      },
-      {
         "name": "breathlessness",
         "placeIndex": 27
       },
       {
-        "name": "fast_heart_rate",
-        "placeIndex": 58
-      },
-      {
-        "name": "palpitations",
-        "placeIndex": 120
+        "name": "cough",
+        "placeIndex": 24
       },
       {
         "name": "high_fever",
         "placeIndex": 25
       },
       {
-        "name": "cough",
-        "placeIndex": 24
+        "name": "chest_pain",
+        "placeIndex": 56
+      },
+      {
+        "name": "congestion",
+        "placeIndex": 55
+      },
+      {
+        "name": "palpitations",
+        "placeIndex": 120
+      },
+      {
+        "name": "fast_heart_rate",
+        "placeIndex": 58
       },
       {
         "name": "phlegm",
@@ -471,18 +367,6 @@
       {
         "name": "mucoid_sputum",
         "placeIndex": 107
-      },
-      {
-        "name": "blood_in_sputum",
-        "placeIndex": 118
-      },
-      {
-        "name": "throat_irritation",
-        "placeIndex": 51
-      },
-      {
-        "name": "patches_in_throat",
-        "placeIndex": 22
       }
     ],
     "isNew": false
@@ -491,36 +375,20 @@
     "bodyPart": "Abdomen",
     "symptoms": [
       {
-        "name": "weight_loss",
-        "placeIndex": 19
-      },
-      {
-        "name": "weight_gain",
-        "placeIndex": 15
-      },
-      {
-        "name": "obesity",
-        "placeIndex": 67
-      },
-      {
-        "name": "history_of_alcohol_consumption",
-        "placeIndex": 116
-      },
-      {
         "name": "stomach_pain",
         "placeIndex": 7
       },
       {
-        "name": "increased_appetite",
-        "placeIndex": 104
-      },
-      {
-        "name": "excessive_hunger",
-        "placeIndex": 74
-      },
-      {
         "name": "abdominal_pain",
         "placeIndex": 39
+      },
+      {
+        "name": "indigestion",
+        "placeIndex": 30
+      },
+      {
+        "name": "acidity",
+        "placeIndex": 8
       },
       {
         "name": "diarrhoea",
@@ -531,28 +399,16 @@
         "placeIndex": 38
       },
       {
-        "name": "indigestion",
-        "placeIndex": 30
-      },
-      {
-        "name": "loss_of_appetite",
-        "placeIndex": 35
+        "name": "vomiting",
+        "placeIndex": 11
       },
       {
         "name": "nausea",
         "placeIndex": 34
       },
       {
-        "name": "acidity",
-        "placeIndex": 8
-      },
-      {
-        "name": "vomiting",
-        "placeIndex": 11
-      },
-      {
-        "name": "stomach_bleeding",
-        "placeIndex": 114
+        "name": "loss_of_appetite",
+        "placeIndex": 35
       },
       {
         "name": "swelling_of_stomach",
@@ -563,6 +419,10 @@
         "placeIndex": 45
       },
       {
+        "name": "stomach_bleeding",
+        "placeIndex": 114
+      },
+      {
         "name": "distention_of_abdomen",
         "placeIndex": 115
       },
@@ -571,16 +431,48 @@
         "placeIndex": 100
       },
       {
+        "name": "pain_behind_the_eyes",
+        "placeIndex": 36
+      },
+      {
         "name": "pain_during_bowel_movements",
         "placeIndex": 59
+      },
+      {
+        "name": "pain_in_anal_region",
+        "placeIndex": 60
       },
       {
         "name": "passage_of_gases",
         "placeIndex": 92
       },
       {
-        "name": "continuous_feel_of_urine",
-        "placeIndex": 91
+        "name": "enlarged_thyroid",
+        "placeIndex": 71
+      },
+      {
+        "name": "burning_micturition",
+        "placeIndex": 12
+      },
+      {
+        "name": "dehydration",
+        "placeIndex": 29
+      },
+      {
+        "name": "yellowing_of_eyes",
+        "placeIndex": 43
+      },
+      {
+        "name": "dark_urine",
+        "placeIndex": 33
+      },
+      {
+        "name": "yellow_urine",
+        "placeIndex": 42
+      },
+      {
+        "name": "acute_liver_failure",
+        "placeIndex": 44
       }
     ],
     "isNew": false
@@ -589,50 +481,72 @@
     "bodyPart": "Pelvis",
     "symptoms": [
       {
-        "name": "yellow_urine",
-        "placeIndex": 42
+        "name": "burning_micturition",
+        "placeIndex": 12
       },
       {
-        "name": "hip_joint_pain",
-        "placeIndex": 79
-      },
-      {
-        "name": "polyuria",
-        "placeIndex": 105
-      },
-      {
-        "name": "dark_urine",
-        "placeIndex": 33
-      },
-      {
-        "name": "extra_marital_contacts",
-        "placeIndex": 75
+        "name": "abnormal_menstruation",
+        "placeIndex": 101
       },
       {
         "name": "bladder_discomfort",
         "placeIndex": 89
       },
       {
-        "name": "burning_micturition",
-        "placeIndex": 12
+        "name": "continuous_feel_of_urine",
+        "placeIndex": 91
       },
       {
-        "name": "painful_walking",
-        "placeIndex": 121
+        "name": "polyuria",
+        "placeIndex": 105
       },
+      {
+        "name": "extra_marital_contacts",
+        "placeIndex": 75
+      }
+    ],
+    "isNew": false
+  },
+  {
+    "bodyPart": "Other",
+    "symptoms": [
       {
         "name": "irregular_sugar_level",
         "placeIndex": 23
       },
       {
-        "name": "pain_in_anal_region",
-        "placeIndex": 60
+        "name": "weight_gain",
+        "placeIndex": 15
       },
       {
-        "name": "abnormal_menstruation",
-        "placeIndex": 101
+        "name": "weight_loss",
+        "placeIndex": 19
+      },
+      {
+        "name": "obesity",
+        "placeIndex": 67
+      },
+      {
+        "name": "excessive_hunger",
+        "placeIndex": 74
+      },
+      {
+        "name": "family_history",
+        "placeIndex": 106
+      },
+      {
+        "name": "history_of_alcohol_consumption",
+        "placeIndex": 116
+      },
+      {
+        "name": "receiving_blood_transfusion",
+        "placeIndex": 111
+      },
+      {
+        "name": "receiving_unsterile_injections",
+        "placeIndex": 112
       }
     ],
-    "isNew": false
+    "isNew": true
   }
 ]

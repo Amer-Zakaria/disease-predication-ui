@@ -24,6 +24,7 @@ export default function BodyPart({
           variant="h6"
           fontWeight="400"
           gutterBottom
+          textAlign="center"
           mb={1.5}
         >
           Select the body parts where your symptoms are occurring
