@@ -3,6 +3,7 @@ import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import Body from "./Body";
 import { Typography } from "@mui/material";
+import data from "../data.json";
 
 export default function BodyPart({
   context: {
@@ -17,7 +18,8 @@ export default function BodyPart({
         display="flex"
         flexWrap="wrap"
         justifyContent="space-evenly"
-        rowGap={4}
+        rowGap={3}
+        mb={2}
       >
         <Typography
           alignSelf="flex-start"
@@ -44,14 +46,26 @@ export default function BodyPart({
         <Box width="100%">
           <div className="or">and / or</div>
         </Box>
-        <Box textAlign="center">
+        <Typography
+          variant="h6"
+          fontWeight="400"
+          gutterBottom
+          textAlign="center"
+          mb={0.5}
+        >
+          Body Layers
+        </Typography>
+        <Box textAlign="center" width="100%">
           <ToggleButtonGroup
             color="error"
             value={bodyParts}
-            exclusive
             onChange={(e) => handleBodyPartSelectorChange(e, e.target.value)}
           >
-            <ToggleButton value="Skin">Skin</ToggleButton>
+            {data
+              .filter((bodyPartSymptomMap) => bodyPartSymptomMap.isNew)
+              .map(({ bodyPart }) => (
+                <ToggleButton value={bodyPart}>{bodyPart}</ToggleButton>
+              ))}
           </ToggleButtonGroup>
         </Box>
       </Box>

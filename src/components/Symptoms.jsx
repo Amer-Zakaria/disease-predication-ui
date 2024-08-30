@@ -40,13 +40,25 @@ export default function Symptoms({
                     alignItems: "center",
                     color: "#4d6182",
                     margin: "1px auto",
+                    // textAlign: "center",
+                    display: "block",
 
-                    "&::after": {
+                    /*                 "&::after": {
                       content: '""',
-                      width: "75%",
+                      width: "25%",
                       verticalAlign: "middle",
                       display: "inline-block",
                       ml: 1,
+                      bgcolor: "#4d6182",
+                      height: ".5px",
+                      flex: "1 1",
+                    }, */
+                    "&::before": {
+                      content: '""',
+                      width: "20%",
+                      verticalAlign: "middle",
+                      display: "inline-block",
+                      mr: 1,
                       bgcolor: "#4d6182",
                       height: ".5px",
                       flex: "1 1",

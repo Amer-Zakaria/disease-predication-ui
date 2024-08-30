@@ -1,75 +1,5 @@
 [
   {
-    "bodyPart": "Skin",
-    "symptoms": [
-      {
-        "name": "itching",
-        "placeIndex": 0
-      },
-      {
-        "name": "skin_rash",
-        "placeIndex": 1
-      },
-      {
-        "name": "nodal_skin_eruptions",
-        "placeIndex": 2
-      },
-      {
-        "name": "yellowish_skin",
-        "placeIndex": 32
-      },
-      {
-        "name": "red_spots_over_body",
-        "placeIndex": 99
-      },
-      {
-        "name": "scurring",
-        "placeIndex": 124
-      },
-      {
-        "name": "skin_peeling",
-        "placeIndex": 125
-      },
-      {
-        "name": "silver_like_dusting",
-        "placeIndex": 126
-      },
-      {
-        "name": "small_dents_in_nails",
-        "placeIndex": 127
-      },
-      {
-        "name": "inflammatory_nails",
-        "placeIndex": 128
-      },
-      {
-        "name": "blister",
-        "placeIndex": 129
-      },
-      {
-        "name": "yellow_crust_ooze",
-        "placeIndex": 131
-      },
-      {
-        "name": "pus_filled_pimples",
-        "placeIndex": 122
-      },
-      {
-        "name": "blackheads",
-        "placeIndex": 123
-      },
-      {
-        "name": "bruising",
-        "placeIndex": 66
-      },
-      {
-        "name": "red_sore_around_nose",
-        "placeIndex": 130
-      }
-    ],
-    "isNew": false
-  },
-  {
     "bodyPart": "Buttocks",
     "symptoms": [
       {
@@ -85,8 +15,12 @@
         "placeIndex": 59
       },
       {
-        "name": "swelling_joints",
-        "placeIndex": 82
+        "name": "extra_marital_contacts",
+        "placeIndex": 75
+      },
+      {
+        "name": "passage_of_gases",
+        "placeIndex": 92
       }
     ],
     "isNew": false
@@ -95,24 +29,16 @@
     "bodyPart": "Arms",
     "symptoms": [
       {
-        "name": "muscle_wasting",
-        "placeIndex": 10
+        "name": "cold_hands_and_feets",
+        "placeIndex": 17
       },
       {
-        "name": "muscle_weakness",
-        "placeIndex": 80
+        "name": "swelled_lymph_nodes",
+        "placeIndex": 47
       },
       {
         "name": "weakness_in_limbs",
         "placeIndex": 57
-      },
-      {
-        "name": "swelling_joints",
-        "placeIndex": 82
-      },
-      {
-        "name": "swollen_blood_vessels",
-        "placeIndex": 69
       },
       {
         "name": "brittle_nails",
@@ -129,28 +55,16 @@
     "bodyPart": "Legs",
     "symptoms": [
       {
-        "name": "muscle_wasting",
-        "placeIndex": 10
-      },
-      {
-        "name": "muscle_weakness",
-        "placeIndex": 80
+        "name": "cold_hands_and_feets",
+        "placeIndex": 17
       },
       {
         "name": "weakness_in_limbs",
         "placeIndex": 57
       },
       {
-        "name": "swelling_joints",
-        "placeIndex": 82
-      },
-      {
         "name": "swollen_legs",
         "placeIndex": 68
-      },
-      {
-        "name": "swollen_blood_vessels",
-        "placeIndex": 69
       },
       {
         "name": "painful_walking",
@@ -159,10 +73,6 @@
       {
         "name": "prominent_veins_on_calf",
         "placeIndex": 119
-      },
-      {
-        "name": "cramps",
-        "placeIndex": 65
       }
     ],
     "isNew": false
@@ -173,10 +83,6 @@
       {
         "name": "back_pain",
         "placeIndex": 37
-      },
-      {
-        "name": "muscle_pain",
-        "placeIndex": 97
       }
     ],
     "isNew": false
@@ -207,8 +113,52 @@
     "bodyPart": "Head",
     "symptoms": [
       {
+        "name": "red_sore_around_nose",
+        "placeIndex": 130
+      },
+      {
+        "name": "pain_behind_the_eyes",
+        "placeIndex": 36
+      },
+      {
+        "name": "yellowing_of_eyes",
+        "placeIndex": 43
+      },
+      {
+        "name": "nausea",
+        "placeIndex": 34
+      },
+      {
+        "name": "breathlessness",
+        "placeIndex": 27
+      },
+      {
+        "name": "cough",
+        "placeIndex": 24
+      },
+      {
+        "name": "congestion",
+        "placeIndex": 55
+      },
+      {
+        "name": "phlegm",
+        "placeIndex": 50
+      },
+      {
+        "name": "rusty_sputum",
+        "placeIndex": 108
+      },
+      {
+        "name": "mucoid_sputum",
+        "placeIndex": 107
+      },
+      {
         "name": "headache",
         "placeIndex": 31
+      },
+      {
+        "name": "high_fever",
+        "placeIndex": 25
       },
       {
         "name": "dizziness",
@@ -283,10 +233,6 @@
         "placeIndex": 113
       },
       {
-        "name": "toxic_look_(typhos)",
-        "placeIndex": 94
-      },
-      {
         "name": "anxiety",
         "placeIndex": 16
       },
@@ -317,10 +263,6 @@
       {
         "name": "puffy_face_and_eyes",
         "placeIndex": 70
-      },
-      {
-        "name": "cold_hands_and_feets",
-        "placeIndex": 17
       }
     ],
     "isNew": false
@@ -328,6 +270,10 @@
   {
     "bodyPart": "Chest",
     "symptoms": [
+      {
+        "name": "irregular_sugar_level",
+        "placeIndex": 23
+      },
       {
         "name": "breathlessness",
         "placeIndex": 27
@@ -337,24 +283,8 @@
         "placeIndex": 24
       },
       {
-        "name": "high_fever",
-        "placeIndex": 25
-      },
-      {
-        "name": "chest_pain",
-        "placeIndex": 56
-      },
-      {
         "name": "congestion",
         "placeIndex": 55
-      },
-      {
-        "name": "palpitations",
-        "placeIndex": 120
-      },
-      {
-        "name": "fast_heart_rate",
-        "placeIndex": 58
       },
       {
         "name": "phlegm",
@@ -367,6 +297,18 @@
       {
         "name": "mucoid_sputum",
         "placeIndex": 107
+      },
+      {
+        "name": "chest_pain",
+        "placeIndex": 56
+      },
+      {
+        "name": "palpitations",
+        "placeIndex": 120
+      },
+      {
+        "name": "fast_heart_rate",
+        "placeIndex": 58
       }
     ],
     "isNew": false
@@ -374,6 +316,30 @@
   {
     "bodyPart": "Abdomen",
     "symptoms": [
+      {
+        "name": "irregular_sugar_level",
+        "placeIndex": 23
+      },
+      {
+        "name": "weight_gain",
+        "placeIndex": 15
+      },
+      {
+        "name": "weight_loss",
+        "placeIndex": 19
+      },
+      {
+        "name": "obesity",
+        "placeIndex": 67
+      },
+      {
+        "name": "excessive_hunger",
+        "placeIndex": 74
+      },
+      {
+        "name": "history_of_alcohol_consumption",
+        "placeIndex": 116
+      },
       {
         "name": "stomach_pain",
         "placeIndex": 7
@@ -431,44 +397,24 @@
         "placeIndex": 100
       },
       {
-        "name": "pain_behind_the_eyes",
-        "placeIndex": 36
-      },
-      {
         "name": "pain_during_bowel_movements",
         "placeIndex": 59
-      },
-      {
-        "name": "pain_in_anal_region",
-        "placeIndex": 60
       },
       {
         "name": "passage_of_gases",
         "placeIndex": 92
       },
       {
-        "name": "enlarged_thyroid",
-        "placeIndex": 71
-      },
-      {
         "name": "burning_micturition",
         "placeIndex": 12
       },
       {
+        "name": "abnormal_menstruation",
+        "placeIndex": 101
+      },
+      {
         "name": "dehydration",
         "placeIndex": 29
-      },
-      {
-        "name": "yellowing_of_eyes",
-        "placeIndex": 43
-      },
-      {
-        "name": "dark_urine",
-        "placeIndex": 33
-      },
-      {
-        "name": "yellow_urine",
-        "placeIndex": 42
       },
       {
         "name": "acute_liver_failure",
@@ -480,6 +426,18 @@
   {
     "bodyPart": "Pelvis",
     "symptoms": [
+      {
+        "name": "dark_urine",
+        "placeIndex": 33
+      },
+      {
+        "name": "yellow_urine",
+        "placeIndex": 42
+      },
+      {
+        "name": "swelled_lymph_nodes",
+        "placeIndex": 47
+      },
       {
         "name": "burning_micturition",
         "placeIndex": 12
@@ -507,36 +465,69 @@
     ],
     "isNew": false
   },
+
   {
-    "bodyPart": "Other",
+    "bodyPart": "Skelton",
     "symptoms": [
+      {
+        "name": "swelling_joints",
+        "placeIndex": 82
+      },
+      {
+        "name": "weakness_in_limbs",
+        "placeIndex": 57
+      }
+    ],
+    "isNew": true
+  },
+  {
+    "bodyPart": "Muscles",
+    "symptoms": [
+      {
+        "name": "muscle_pain",
+        "placeIndex": 97
+      },
+      {
+        "name": "cramps",
+        "placeIndex": 65
+      },
+      {
+        "name": "swelling_joints",
+        "placeIndex": 82
+      },
+      {
+        "name": "muscle_wasting",
+        "placeIndex": 10
+      },
+      {
+        "name": "muscle_weakness",
+        "placeIndex": 80
+      },
+      {
+        "name": "weakness_in_limbs",
+        "placeIndex": 57
+      }
+    ],
+    "isNew": true
+  },
+  {
+    "bodyPart": "Vessles",
+    "symptoms": [
+      {
+        "name": "prominent_veins_on_calf",
+        "placeIndex": 119
+      },
+      {
+        "name": "weakness_in_limbs",
+        "placeIndex": 57
+      },
+      {
+        "name": "swollen_blood_vessels",
+        "placeIndex": 69
+      },
       {
         "name": "irregular_sugar_level",
         "placeIndex": 23
-      },
-      {
-        "name": "weight_gain",
-        "placeIndex": 15
-      },
-      {
-        "name": "weight_loss",
-        "placeIndex": 19
-      },
-      {
-        "name": "obesity",
-        "placeIndex": 67
-      },
-      {
-        "name": "excessive_hunger",
-        "placeIndex": 74
-      },
-      {
-        "name": "family_history",
-        "placeIndex": 106
-      },
-      {
-        "name": "history_of_alcohol_consumption",
-        "placeIndex": 116
       },
       {
         "name": "receiving_blood_transfusion",
@@ -545,6 +536,88 @@
       {
         "name": "receiving_unsterile_injections",
         "placeIndex": 112
+      }
+    ],
+    "isNew": true
+  },
+  {
+    "bodyPart": "Skin",
+    "symptoms": [
+      {
+        "name": "cold_hands_and_feets",
+        "placeIndex": 17
+      },
+      {
+        "name": "swelling_joints",
+        "placeIndex": 82
+      },
+      {
+        "name": "itching",
+        "placeIndex": 0
+      },
+      {
+        "name": "skin_rash",
+        "placeIndex": 1
+      },
+      {
+        "name": "nodal_skin_eruptions",
+        "placeIndex": 2
+      },
+      {
+        "name": "yellowish_skin",
+        "placeIndex": 32
+      },
+      {
+        "name": "red_spots_over_body",
+        "placeIndex": 99
+      },
+      {
+        "name": "scurring",
+        "placeIndex": 124
+      },
+      {
+        "name": "skin_peeling",
+        "placeIndex": 125
+      },
+      {
+        "name": "silver_like_dusting",
+        "placeIndex": 126
+      },
+      {
+        "name": "small_dents_in_nails",
+        "placeIndex": 127
+      },
+      {
+        "name": "blister",
+        "placeIndex": 129
+      },
+      {
+        "name": "yellow_crust_ooze",
+        "placeIndex": 131
+      },
+      {
+        "name": "pus_filled_pimples",
+        "placeIndex": 122
+      },
+      {
+        "name": "blackheads",
+        "placeIndex": 123
+      },
+      {
+        "name": "bruising",
+        "placeIndex": 66
+      },
+      {
+        "name": "red_sore_around_nose",
+        "placeIndex": 130
+      },
+      {
+        "name": "brittle_nails",
+        "placeIndex": 72
+      },
+      {
+        "name": "inflammatory_nails",
+        "placeIndex": 128
       }
     ],
     "isNew": true
